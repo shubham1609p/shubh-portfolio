@@ -19,7 +19,13 @@
       <a href="#projects">Projects</a>
       <a href="#showreel">Showreel</a>
       <a href="#contact">Contact</a>
-      <a class="btn small" href="#" id="downloadResume">Download Resume</a>
+
+      <!-- Direct download link (works better than /view) -->
+      <a class="btn small"
+         href="https://drive.google.com/uc?export=download&id=1wQRvuTUjQAQHt4lyLw8eB6ljLJKdLjGC"
+         target="_blank" rel="noreferrer">
+        Download Resume
+      </a>
     </nav>
 
     <div class="nav-actions">
@@ -27,6 +33,9 @@
       <button class="icon-btn burger" id="burgerBtn" aria-label="Menu">☰</button>
     </div>
   </header>
+
+  <!-- Theme flash overlay -->
+  <div class="theme-flash" id="themeFlash" aria-hidden="true"></div>
 
   <!-- HERO -->
   <main id="home" class="hero">
@@ -48,6 +57,26 @@
           <a class="btn ghost" href="#showreel">Watch Edits</a>
         </div>
 
+        <!-- Morph block (optional images: crank.png, ai ani.png, edit log.png) -->
+        <div class="morph-wrap">
+          <div class="morph-labels">
+            <span class="morph-badge">Manufacturing</span>
+            <span class="morph-arrow">→</span>
+            <span class="morph-badge">AI</span>
+            <span class="morph-arrow">→</span>
+            <span class="morph-badge">Editing</span>
+          </div>
+
+          <div class="morph-stage" aria-label="Crank to AI to Editing">
+            <img class="morph-img is-active" id="morph1" src="crank.png" alt="Crank icon" />
+            <img class="morph-img" id="morph2" src="ai ani.png" alt="AI icon" />
+            <img class="morph-img" id="morph3" src="edit log.png" alt="Editing icon" />
+          </div>
+
+          <p class="muted small morph-caption">
+            A quick snapshot of what I build: engineering workflows, AI systems, and cinematic content.
+          </p>
+        </div>
 
         <div class="stats">
           <div class="stat">
@@ -80,7 +109,7 @@
             <a class="chip" href="https://www.linkedin.com/in/shubham016/" target="_blank" rel="noreferrer">LinkedIn</a>
             <a class="chip" href="https://github.com/shubham1609p" target="_blank" rel="noreferrer">GitHub</a>
             <a class="chip" href="https://leetcode.com/u/shubham16p/" target="_blank" rel="noreferrer">LeetCode</a>
-            <a class="chip" href="https://shubhags.vercel.app/" target="_blank" rel="noreferrer">Live Project</a>
+            <a class="chip" href="https://shubhags.vercel.app/" target="_blank" rel="noreferrer">Automated Gating</a>
           </div>
 
           <div class="line"></div>
@@ -194,7 +223,7 @@
     <div class="container">
       <div class="section-head">
         <h2>Projects</h2>
-        <p class="muted">Click a project to open details.</p>
+        <p class="muted">Click a project to open details. Use Open for direct link.</p>
       </div>
 
       <div class="projects">
@@ -206,8 +235,21 @@
           <h3>Automated Gating System</h3>
           <p class="muted">Live demo on Vercel.</p>
           <div class="p-foot">
-            <span class="mini">Live Project</span>
-            <button class="link-btn" type="button">View</button>
+            <span class="mini">Live</span>
+            <a class="btn small p-open" href="https://shubhags.vercel.app/" target="_blank" rel="noreferrer">Open</a>
+          </div>
+        </article>
+
+        <article class="p-card"
+          data-title="Benevolent Bites"
+          data-desc="A platform to collect leftover food from events/hotels/restaurants and distribute it to people in need."
+          data-tech="Web • Social Impact • Operations"
+          data-link="https://benevolentbites.framer.website/">
+          <h3>Benevolent Bites</h3>
+          <p class="muted">Social impact project.</p>
+          <div class="p-foot">
+            <span class="mini">Live</span>
+            <a class="btn small p-open" href="https://benevolentbites.framer.website/" target="_blank" rel="noreferrer">Open</a>
           </div>
         </article>
 
@@ -220,7 +262,7 @@
           <p class="muted">Code & repositories.</p>
           <div class="p-foot">
             <span class="mini">Proof</span>
-            <button class="link-btn" type="button">View</button>
+            <a class="btn small p-open" href="https://github.com/shubham1609p" target="_blank" rel="noreferrer">Open</a>
           </div>
         </article>
 
@@ -233,7 +275,7 @@
           <p class="muted">Problem solving practice.</p>
           <div class="p-foot">
             <span class="mini">DSA</span>
-            <button class="link-btn" type="button">View</button>
+            <a class="btn small p-open" href="https://leetcode.com/u/shubham16p/" target="_blank" rel="noreferrer">Open</a>
           </div>
         </article>
       </div>
@@ -276,7 +318,8 @@
           </div>
           <h3>CVMU Reels Project</h3>
           <p class="muted">Short-form reels editing for engagement.</p>
-          <a class="btn" href="https://www.instagram.com/reel/DPeQ-edDwy5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" target="_blank" rel="noreferrer">Watch</a>
+          <a class="btn" href="https://www.instagram.com/reel/DPeQ-edDwy5/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA=="
+             target="_blank" rel="noreferrer">Watch</a>
         </article>
 
         <article class="video-card">
@@ -286,7 +329,8 @@
           </div>
           <h3>Tharun Speak – Editing Project</h3>
           <p class="muted">End-to-end edit executed by me (flow, pacing, transitions).</p>
-          <a class="btn" href="https://drive.google.com/file/d/1vAplJz0ljV8VCtcCACc1hiMjJ3PxUELB/view?usp=drive_link" target="_blank" rel="noreferrer">Watch</a>
+          <a class="btn" href="https://drive.google.com/file/d/1vAplJz0ljV8VCtcCACc1hiMjJ3PxUELB/view?usp=drive_link"
+             target="_blank" rel="noreferrer">Watch</a>
         </article>
       </div>
 
@@ -313,9 +357,9 @@
             <a class="chip" href="https://github.com/shubham1609p" target="_blank" rel="noreferrer">GitHub</a>
             <a class="chip" href="https://leetcode.com/u/shubham16p/" target="_blank" rel="noreferrer">LeetCode</a>
             <a class="chip" href="https://shubhags.vercel.app/" target="_blank" rel="noreferrer">Automated Gating System</a>
+            <a class="chip" href="https://benevolentbites.framer.website/" target="_blank" rel="noreferrer">Benevolent Bites</a>
             <a class="chip" href="mailto:shubhamrajput3127@gmail.com">shubhamrajput3127@gmail.com</a>
           </div>
-          
         </div>
 
         <form class="card form" id="contactForm">
@@ -370,3 +414,4 @@
   <script src="script.js"></script>
 </body>
 </html>
+
